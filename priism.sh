@@ -165,12 +165,12 @@ if [ ! -z "$(ls -A /mnt/priism/.IMAGES_NOT_YET_RESIZED 2> /dev/null)" ]; then # 
 	
 	umount $priism_images
 	
-	growpart $priism_images # growpart. why. why didn't you have to be different.
-	e2fsck -f $priism_images
+	growpart /dev/sda 5 # growpart. why. why didn't you have to be different.
+	e2fsck -f /dev/sda5
 	
 	echo -e "${COLOR_GREEN}Info: Resizing filesystem (This operation may take a while, do not panic if it looks stuck!)${COLOR_RESET}"
 	
-	resize2fs -p $priism_images || fail "Failed to resize filesystem on ${priism_images}!"
+	resize2fs -p /dev/sda5 || fail "Failed to resize filesystem on ${priism_images}!"
 	
 	echo -e "${COLOR_GREEN}Done. Remounting partition...${COLOR_RESET}"
 	
