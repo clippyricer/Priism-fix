@@ -7,11 +7,10 @@ Payloads menu :white_check_mark:<br>
 Booting other shims :white_check_mark:<br>
 
 # Downloads
-~~[Official Prebuilts](https://dl.archima.xyz/Priism)~~<br>
-[Fanqyxl's File Host*](https://dl.fanqyxl.net/Priism)<br>
+None yet.
 
-Mirrors that are crossed out don't have Priism uploaded yet.
-Mirrors with a star next to them may not have all boards uploaded yet.
+[//]: # (Mirrors that are crossed out don't have Priism uploaded yet.)
+[//]: # (Mirrors with a star next to them may not have all boards uploaded yet.)
 
 # FAQ (Frequently Asked Questions)
 <details>
